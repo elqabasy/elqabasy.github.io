@@ -4,23 +4,13 @@
 
 
 
-body {
-    color: var(--text);
-    /* color: red; */
-}
-
-::-webkit-scrollbar {
-    display: none;
-}
-
 header {
     height: 50vh;
-    /* background-color: var(--secondary); */
 }
 
 
 nav>div>a {
-    background: linear-gradient(#121213, #121213), linear-gradient(#121213 50%, rgba(18, 18, 19, 0.6) 80%, rgba(18, 18, 19, 0)), linear-gradient(90deg, var(--orange), var(--yellow), var(--green), var(--blue), var(--purple), var(--pink), var(--red));
+    /* background: linear-gradient(#121213, #121213), linear-gradient(#121213 50%, rgba(18, 18, 19, 0.6) 80%, rgba(18, 18, 19, 0)), linear-gradient(90deg, var(--orange), var(--yellow), var(--green), var(--blue), var(--purple), var(--pink), var(--red)); */
     background-origin: border-box;
     background-clip: padding-box, border-box, border-box;
     background-size: 200%;
@@ -43,8 +33,14 @@ nav>div>a {
     color: var(--background);
     background-color: var(--primary);
 
+
 }
 
+section a {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: larger;
+}
 
 /* btn download */
 #btn-download {
@@ -65,7 +61,7 @@ nav>div>a {
 
 #btn-download svg polyline,
 #btn-download svg path {
-    stroke: #0077FF;
+    stroke: var(--primary);
     stroke-width: 2;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -123,9 +119,7 @@ nav>div>a {
     transform: scale(0.95);
 }
 
-/* #header-title-idea{
 
-} */
 
 
 button[primary]:hover {
@@ -162,70 +156,55 @@ button[primary]:hover {
 
 
 
+/* Start Section Style */
+hr {
+    height: 2px;
+    color: var(--background);
+    background-color: var(--background);
+}
 
+section>.content:hover {
+    background-color: var(--secondary);
+}
 
-/* Start Projects Section */
-.project-card {
-    border: 1px solid var(--accent);
+section>.content {
+    padding: 5px;
     border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.project-card img {
-    width: 100%;
-    border-radius: 5px;
+section {
+    padding-top: 15px;
 }
-
-.project-card h4 {
-    margin-top: 10px;
-    color: var(--primary);
-}
-
-.project-card p {
-    margin: 10px 0;
-}
-
-.project-card .btn {
-    background-color: var(--primary);
-    color: white;
-}
-
-.project-card .btn:hover {
-    background-color: var(--primary);
-}
-
-
-/* Start Projects Section */
-
 
 
 
 section>h2 {
-    width: min-content;
-    height: 25px;
-
-    background-color: var(--secondary);
-    transform: rotate(0deg);
-    padding: 15px 5;
-    margin: 20px 0;
-    font-weight: bold;
-    text-align: center;
-    width: min-content;
-    border-radius: 20px;
-    border-bottom: 2px solid var(--secondary);
+    position: relative;
+    padding-left: 15px;
 }
 
+section>h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: var(--secondary);
+}
+
+/* End Section Title */
 
 /* Start Footer Section Style */
 .footer {
-    background-color: #f8f9fa;
     padding: 40px 0;
+    background-color: var(--background);
 }
 
 .footer a {
-    color: #0A66C2;
+    color: var(--accent);
     text-decoration: none;
 }
 
@@ -266,8 +245,8 @@ section>h2 {
     left: -13px;
     width: 25px;
     height: 25px;
-    background-color: var(--secondary-100);
     border-radius: 15px;
+    background-color: var(--secondary-100);
 }
 
 #goTopBtn:hover {
@@ -279,16 +258,22 @@ section>h2 {
 
 
 /* Start Contact Section */
-footer a::before {
+
+
+footer a:not(footer .follow-links>a)::before,
+section a::before {
     content: "↪ ";
     color: transparent;
+
 }
 
-footer a:hover::before {
+footer a:not(footer .follow-links>a):hover::before,
+section a:hover::before {
     color: var(--secondary);
 }
 
-footer a:focus::before {
+footer a:not(footer .follow-links>a):focus::before,
+section a:hover::before {
     color: var(--accent);
 }
 
@@ -299,4 +284,136 @@ footer a:focus::before {
 .got-next-section {
     position: relative;
     bottom: 50px;
+}
+
+
+/* Start Scroll Mouse animation */
+
+#mouse-scroll {
+    margin: auto;
+}
+
+#mouse-scroll {
+    margin: auto;
+    width: min-content;
+    position: relative;
+}
+
+#mouse-scroll span {
+    display: block;
+    width: 5px;
+    height: 5px;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-right: 2px solid var(--accent);
+    border-bottom: 2px solid var(--accent);
+    margin: 0 0 3px 5px;
+}
+
+#mouse-scroll .mouse {
+    height: 21px;
+    width: 14px;
+    border-radius: 10px;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    border: 2px solid var(--accent);
+    /* top: 170px; */
+}
+
+#mouse-scroll .down-arrow-1 {
+    margin-top: 6px;
+}
+
+#mouse-scroll .down-arrow-1,
+#mouse-scroll .down-arrow-2,
+#mouse-scroll .down-arrow-3 {
+    animation: mouse-scroll 1s infinite;
+    -webkit-animation: mouse-scroll 1s infinite;
+    -moz-animation: mouse-scroll 1s infinite;
+}
+
+#mouse-croll .down-arrow-1 {
+    animation-delay: .1s;
+    -webkit-animation-delay: .1s;
+    -moz-animation-delay: .1s;
+    animation-direction: alternate;
+    -webkit-animation-direction: alternate;
+}
+
+#mouse-scroll .down-arrow-2 {
+    animation-delay: .2s;
+    -moz-animation-delay: .2s;
+    -webkit-animation-delay: .2s;
+    animation-direction: alternate;
+    -webkit-animation-direction: alternate;
+}
+
+#mouse-scroll .down-arrow-3 {
+    animation-delay: .3s;
+    -moz-animation-delay: .3s;
+    -webkit-animation-delay: .3s;
+    animation-direction: alternate;
+    -webkit-animation-direction: alternate;
+}
+
+#mouse-scroll .mouse-in {
+    height: 5px;
+    width: 2px;
+    display: block;
+    margin: 5px auto;
+    background: var(--accent);
+    position: relative;
+}
+
+#mouse-scroll .mouse-in {
+    animation: animated-mouse 1.2s ease infinite;
+    -webkit-animation: animated-mouse 1.2s ease infinite;
+    -moz-animation: mouse-animated 1.2s ease infinite;
+}
+
+@keyframes animated-mouse {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(6px);
+        -ms-transform: translateY(6px);
+        transform: translateY(6px);
+    }
+}
+
+@-webkit-keyframes mouse-scroll {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes mouse-scroll {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }

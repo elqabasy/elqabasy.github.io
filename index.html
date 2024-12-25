@@ -20,8 +20,8 @@
 
 
     <!-- Start Navbar -->
-    <nav id="nav-bar-top-1" class="navbar navbar-expand-lg bg-light">
-        <div class="container rounded bg-white border mt-1">
+    <nav id="nav-bar-top-1" class="navbar navbar-expand-lg ">
+        <div class="container rounded border mt-1">
             <a class="navbar-brand fw-bold" href="#">Mahros AL-Qabasy</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,10 +30,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#Experience">Experience</a>
+                        <a class="nav-link active" href="#Intro" selected>Intro</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Education">Projects</a>
+                        <a class="nav-link" href="#Experience" selected>Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Projects">Projects</a>
                     </li>
 
                     <li class="nav-item">
@@ -57,11 +60,11 @@
 
         <!-- Start Content -->
         <div class="container h-100 m-auto">
-            <div class="h-100 d-flex flex-column justify-content-center">
+            <div class="h-75 d-flex flex-column justify-content-center">
                 <div class="text-center">
                     <h1 class="fw-bold display-2">
-                        <span>Front-end</span>
-                        <span> developer</span>
+                        <span>CS</span>
+                        <span> Student</span>
                     </h1>
                     <span>Engineering Solutions Shaping the future. 😍</span>
 
@@ -91,6 +94,19 @@
                 </div>
             </div>
 
+            <a href="#Experience">
+                <div id="mouse-scroll" class="d-flex flex-column m-auto">
+                    <div class="mouse">
+                        <div class="mouse-in"></div>
+                    </div>
+                    <div>
+                        <span class="down-arrow-1"></span>
+                        <span class="down-arrow-2"></span>
+                        <span class="down-arrow-3"></span>
+                    </div>
+                </div>
+            </a>
+
         </div>
         <!-- End Content -->
 
@@ -102,10 +118,14 @@
     <!-- Start Experience Section -->
     <section id="Experience" class="container mb-5">
         <h2>Experience</h2>
+
+
         <div class="content">
             <div class="item">
                 <div class="d-flex flex-row justify-content-between flex-wrap">
-                    <h3>Code Alpha | Back-end developer</h3>
+                    <a href="https://www.linkedin.com/in/ma7ros#experience" target="_blank">Code Alpha | Back-end
+                        developer
+                    </a>
                     <p>Remote | <mark>12.2024 - Present</mark></p>
                 </div>
                 <ul>
@@ -115,7 +135,9 @@
             <hr>
             <div class="item">
                 <div class="d-flex flex-row justify-content-between flex-wrap">
-                    <h3>Matrix Solutions | C++ developer</h3>
+                    <a href="https://www.linkedin.com/in/ma7ros#experience" target="_blank">Matrix Solutions | C++
+                        developer
+                    </a>
                     <p>Remote | <mark>11.2024 - 12.2024</mark></p>
                 </div>
                 <ul>
@@ -131,7 +153,9 @@
             <hr>
             <div class="item">
                 <div class="d-flex flex-row justify-content-between flex-wrap">
-                    <h3>Qabas Group | Front End Developer</h3>
+                    <a href="https://www.linkedin.com/in/ma7ros#experience" target="_blank">Qabas Group | Front End
+                        Developer
+                    </a>
                     <p>Kafrelsheikh, Desouk | <mark>03.2023 - Present</mark></p>
                 </div>
                 <ul>
@@ -150,10 +174,13 @@
 
     <section id="Projects" class="container mb-5">
         <h2>Projects</h2>
+
         <div class="content">
             <div class="item">
                 <div class="d-flex flex-row justify-content-between flex-wrap">
-                    <h3>Bank System | Matrix Solutions</h3>
+                    <a href="https://github.com/elqabasy/BankSystem" target="_blank">
+                        Bank System | BWMS
+                    </a>
                     <p>Remote | <mark>11.2023 - 12.2024</mark></p>
                 </div>
 
@@ -167,7 +194,9 @@
             <hr>
             <div class="item">
                 <div class="d-flex flex-row justify-content-between flex-wrap">
-                    <h3>Financial App | Telecom EG</h3>
+                    <a href="https://www.linkedin.com/in/ma7ros#experience" target="_blank">
+                        Financial App | Telecom EG
+                    </a>
                     <p>Cairo, Naser City | <mark>08.2024 - 09.2024</mark></p>
                 </div>
                 <ul>
@@ -179,7 +208,9 @@
             <hr>
             <div class="item">
                 <div class="d-flex flex-row justify-content-between flex-wrap">
-                    <h3>Transfers Automation | Qabas Group</h3>
+                    <a href="https://github.com/elqabasy/Auto-Bank/tree/main/Auto-Bank" target="_blank">
+                        Auto Bank | Qabas Group
+                    </a>
                     <p>Kafrelsheikh, Desouk | <mark>06.2023 - 10.2023</mark></p>
                 </div>
 
@@ -195,7 +226,9 @@
             <hr>
             <div class="item">
                 <div class="d-flex flex-row justify-content-between flex-wrap">
-                    <h3>Grain Silos | Qabas Group</h3>
+                    <a href="https://github.com/elqabasy/SAWMAA-PROJECT" target="_blank">
+                        Grain Silos | Qabas Group
+                    </a>
                     <p>Kafrelsheikh, Desouk | <mark>03.2023 - 06.2023</mark></p>
                 </div>
                 <ul>
@@ -215,61 +248,69 @@
     <section id="Education" class="container mb-5">
         <h2>Education</h2>
 
-        <div class="item">
-            <div class="d-flex flex-row justify-content-between flex-wrap">
-                <h3>Galala University | Bachelor of Computer Science</h3>
-                <p>Suez, Ataqa | <mark>10.2023 - Present</mark></p>
+        <div class="content">
+            <div class="item">
+                <div class="d-flex flex-row justify-content-between flex-wrap">
+                    <a href="https://www.linkedin.com/in/ma7ros#experience" target="_blank">
+                        Galala University | Bachelor of Computer Science
+                    </a>
+                    <p>Suez, Ataqa | <mark>10.2023 - Present</mark></p>
+                </div>
+                <ul>
+                    <li>Graduation Date: May-2026</li>
+                    <li>Top-ranked student in local problem-solving contest competition.</li>
+                </ul>
             </div>
-            <ul>
-                <li>Graduation Date: May-2026</li>
-                <li>Top-ranked student in local problem-solving contest competition.</li>
-            </ul>
-        </div>
-        <hr>
-        <div class="item">
-            <div class="d-flex flex-row justify-content-between flex-wrap">
-                <h3>Telecom Egypt | Flutter Mobile App Diploma</h3>
-                <p>Cairo, Nasr City | <mark>07.2024 - 09.2024</mark></p>
+            <hr>
+            <div class="item">
+                <div class="d-flex flex-row justify-content-between flex-wrap">
+                    <a href="https://github.com/elqabasy/Licenses-Certifications/blob/main/Flutter%20Mobile%20App%20Diploma.jpg"
+                        target="_blank">
+                        Telecom Egypt | Flutter Mobile App Diploma
+                    </a>
+                    <p>Cairo, Nasr City | <mark>07.2024 - 09.2024</mark></p>
+                </div>
+                <ul>
+                    <li>Key Skills: Dart, Flutter, Firebase, and Cloud Store.</li>
+                    <li>Project: Developed Finance Mobile App for Trading Company</li>
+                    <li>Achievements:
+                        <ul>
+                            <li>Successfully developed a cross-platform mobile app for a trading company using
+                                Flutter, enabling users to trade stocks, track portfolios, and receive real-time
+                                market updates.</li>
+                            <li>Implemented real-time data synchronization using Firebase and the Cloud Store,
+                                ensuring seamless data updates across multiple devices and enabling
+                                collaborative
+                                trading features.</li>
+                            <li>Collaborated effectively with a team of developers to deliver the project on
+                                time
+                                and within budget, exceeding client expectations.</li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-            <ul>
-                <li>Key Skills: Dart, Flutter, Firebase, and Cloud Store.</li>
-                <li>Project: Developed Finance Mobile App for Trading Company</li>
-                <li>Achievements:
-                    <ul>
-                        <li>Successfully developed a cross-platform mobile app for a trading company using
-                            Flutter, enabling users to trade stocks, track portfolios, and receive real-time
-                            market updates.</li>
-                        <li>Implemented real-time data synchronization using Firebase and the Cloud Store,
-                            ensuring seamless data updates across multiple devices and enabling
-                            collaborative
-                            trading features.</li>
-                        <li>Collaborated effectively with a team of developers to deliver the project on
-                            time
-                            and within budget, exceeding client expectations.</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <hr>
-        <div class="item">
-            <div class="d-flex flex-row justify-content-between flex-wrap">
-                <h3>AMIT Learning | Full Stack Diploma</h3>
-                <p>Remote | <mark>05.2021 - 12.2022</mark></p>
+            <hr>
+            <div class="item">
+                <div class="d-flex flex-row justify-content-between flex-wrap">
+                    <a href="" target="_blank">
+                        AMIT Learning | Full Stack Diploma
+                    </a>
+                    <p>Remote | <mark>05.2021 - 12.2022</mark></p>
+                </div>
+                <ul>
+                    <li>Key Skills: HTML, CSS, JavaScript, Git, and GitHub</li>
+                    <li>Project: Developed COVID-19 Informative Platform</li>
+                    <li>Achievements:
+                        <ul>
+                            <li>Upgraded the functionality of a comprehensive COVID-19 Informative Platform
+                                through
+                                innovative UI/UX design strategies, leading to significant improvements in
+                                navigation efficiency as evidenced by user feedback scores exceeding 90%.</li>
+                            <li>Successfully completed the project within 1 week.</li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-            <ul>
-                <li>Key Skills: HTML, CSS, JavaScript, Git, and GitHub</li>
-                <li>Project: Developed COVID-19 Informative Platform</li>
-                <li>Achievements:
-                    <ul>
-                        <li>Upgraded the functionality of a comprehensive COVID-19 Informative Platform
-                            through
-                            innovative UI/UX design strategies, leading to significant improvements in
-                            navigation efficiency as evidenced by user feedback scores exceeding 90%.</li>
-                        <li>Successfully completed the project within 1 week.</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
         </div>
     </section>
     <!-- End Education Section -->
@@ -278,7 +319,8 @@
     <!-- Start skills section -->
     <section id="Skills" class="container mb-5">
         <h2>Skills</h2>
-        <div class="skills">
+
+        <div class="content skills">
             <span>C++</span>
             <span>Python</span>
             <span>Dart</span>
@@ -328,24 +370,36 @@
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 follow-links">
                     <h5>Follow Me</h5>
                     <a href="https://www.linkedin.com/in/ma7ros" target="_blank">
-                        <i class="fab fa-linkedin social-icon" style="color: #0A66C2;"></i>
+                        <i class="d-flex flex-row justify-contentcenter gap-0 align-items-center">
+                            <i class="fab fa-linkedin social-icon" style="color: #0A66C2;"></i>
+                            LinkedIn
+                        </i>
+
                     </a>
                     <a href="https://www.github.com/elqabasy" target="_blank">
-                        <i class="fab fa-github social-icon" style="color: #333;">
+                        <i class="d-flex flex-row justify-contentcenter gap-0 align-items-center">
+                            <i class="fab fa-github social-icon" style="color: #333;"></i>
+                            GitHub
                         </i>
+
                     </a>
                     <a href="https://codeforces.com/mahros" target="_blank">
-                        <i class="fas fa-code social-icon" style="color: #FF5722;"></i>
+                        <i class="d-flex flex-row justify-contentcenter gap-0 align-items-center">
+                            <i class="fas fa-code social-icon" style="color: #FF5722;"></i>
+                            Codeforces
+                        </i>
+
                     </a>
                     <a href="https://vjudge.net/mahros" target="_blank">
-                        <i class="fas fa-balance-scale social-icon" style="color: #28a745;"></i>
+                        <i class="d-flex flex-row justify-contentcenter gap-0 align-items-center">
+                            <i class="fas fa-balance-scale social-icon" style="color: #28a745;"></i>
+                            VJudge
+                        </i>
+
                     </a>
-                    <!-- <a href="https://www.youtube.com" target="_blank">
-                        <i class="fab fa-youtube social-icon" style="color: #FF0000;"></i>
-                    </a> -->
                 </div>
             </div>
         </div>
@@ -363,8 +417,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <script src="./js/bootstrap.min.js"></script>
-    <!-- <script src="./js/bootstrap.esm.min.js"></script> -->
-    <!-- <script src="./js/bootstrap.bundle.min.js"></script> -->
+    <script src="./js/bootstrap.esm.min.js"></script> -->
+    <!-- <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="js/custom.js"></script>
     <!-- End Scripts -->
 </body>

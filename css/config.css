@@ -1,12 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Offside:700|Offside:400');
 
 
-
-body {
-    overflow: scroll;
-}
-
-:root[data-theme="light"] {
+body[data-theme="light"] {
     --text: #050315;
     --background: #fbfbfe;
     --primary: #2f27ce;
@@ -14,14 +9,32 @@ body {
     --accent: #433bff;
 }
 
-:root[data-theme="dark"] {
+body[data-theme="dark"] {
     --text: #ebe9fc;
-    --background: #010104;
+    --background: #010104aa;
     --primary: #3a31d8;
     --secondary: #020024;
     --accent: #0600c2;
 }
 
+* {
+    transition: all 0.2s;
+    scroll-behavior: smooth;
+
+}
+
+
+
+body {
+    overflow: scroll;
+    color: var(--text);
+    background-color: var(--background);
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
 
 
 
@@ -31,10 +44,6 @@ button:hover {
 
 }
 
-
-.primary-box-shadow {
-    box-shadow: 0px 0px 20px 15px rgba(26, 26, 247, 0.08);
-}
 
 body {
     font-weight: 300;
@@ -54,6 +63,7 @@ mark {
 /* Start Settings */
 a.nav-link.active {
     font-weight: bold;
+    color: var(--secondary);
 }
 
 
