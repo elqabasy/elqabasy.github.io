@@ -8,6 +8,7 @@
 
     <!-- Start CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/config.css">
     <link rel="stylesheet" href="css/style.css">
@@ -56,16 +57,21 @@
 
         <!-- Start Content -->
         <div class="container h-100 m-auto">
-            <div class="h-75 d-flex flex-column justify-content-center">
+            <div class="h-100 d-flex flex-column justify-content-center">
                 <div class="text-center">
-                    <h1 class="fw-bold display-2">Front-end developer</h1>
+                    <h1 class="fw-bold display-2">
+                        <span>Front-end</span>
+                        <span> developer</span>
+                    </h1>
                     <span>Engineering Solutions Shaping the future. 😍</span>
 
                 </div>
 
                 <div class="pt-5 gap-3 justify-content-center">
                     <div class="d-flex gap-3 flex-wrap justify-content-center">
-                        <button id="btn-request-service" primary>Request Service</button>
+                        <button id="btn-request-service" data-toggle="modal" data-target="#exampleModalLong"
+                            primary>Request Service
+                        </button>
                         <button id="btn-download-cv" class="d-flex flex-row justify-content-center align-items-center">
 
                             <div class="text col-9">Download CV</div>
@@ -355,9 +361,10 @@
 
     <!-- Start Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/bootstrap.esm.min.js"></script>
-    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="./js/bootstrap.esm.min.js"></script> -->
+    <!-- <script src="./js/bootstrap.bundle.min.js"></script> -->
     <script src="js/custom.js"></script>
     <!-- End Scripts -->
 </body>
