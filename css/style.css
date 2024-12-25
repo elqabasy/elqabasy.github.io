@@ -258,21 +258,26 @@ section>h2::before {
 
 
 /* Start Contact Section */
+footer .follow-links>a>i>i {
+    width: 40px;
+    text-align: center;
+    /* background-color: red; */
+    font-size: 32px;
+}
 
-
-footer a:not(footer .follow-links>a)::before,
+footer a::before,
 section a::before {
     content: "↪ ";
     color: transparent;
 
 }
 
-footer a:not(footer .follow-links>a):hover::before,
+footer a:hover::before,
 section a:hover::before {
     color: var(--secondary);
 }
 
-footer a:not(footer .follow-links>a):focus::before,
+footer a:focus::before,
 section a:hover::before {
     color: var(--accent);
 }
