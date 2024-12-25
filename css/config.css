@@ -63,7 +63,7 @@ mark {
 /* Start Settings */
 a.nav-link.active {
     font-weight: bold;
-    color: var(--secondary);
+    color: var(--accent) !important;
 }
 
 
