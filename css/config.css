@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Offside:700|Offside:400');
+
+
+body {
+    overflow: scroll;
+}
+
+:root[data-theme="light"] {
+    --text: #050315;
+    --background: #fbfbfe;
+    --primary: #2f27ce;
+    --secondary: #dedcff;
+    --accent: #433bff;
+}
+
+:root[data-theme="dark"] {
+    --text: #ebe9fc;
+    --background: #010104;
+    --primary: #3a31d8;
+    --secondary: #020024;
+    --accent: #0600c2;
+}
+
+.gradient-text {}
+
+
+
+button:hover {
+    box-shadow: 0px 0px 20px 15px rgba(26, 26, 247, 0.08);
+
+}
+
+
+.primary-box-shadow {
+    box-shadow: 0px 0px 20px 15px rgba(26, 26, 247, 0.08);
+}
+
+body {
+    font-weight: 300;
+    color: var(--text);
+    font-family: 'Offside';
+    background-color: var(--background);
+
+}
+
+
+mark {
+    color: var(--text);
+    background-color: var(--secondary);
+}
+
+
+/* Start Settings */
+a.nav-link.active {
+    font-weight: bold;
+}
+
+
+/* End Settings */

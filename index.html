@@ -1,161 +1,365 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahros Elqabasy's Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Mahros Mohamed - Resume</title>
+
+    <!-- Start CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/config.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-query.css">
+    <!-- End CSS -->
 </head>
-<body>
-    <nav class="navbar">
-        <h1 class="brand"><span>M</span>ahros</h1>
-        <div class="toggle-btn">
-            <span></span>
-            <span></span>
+
+<body data-theme="light">
+
+
+    <!-- Start Navbar -->
+    <nav id="nav-bar-top-1" class="navbar navbar-expand-lg">
+        <div class="container rounded h-50 bg-white border mt-1 pd-6" moved>
+            <a class="navbar-brand fw-bold gradient-text" href="#">Mahros AL-Qabasy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Education">Projects</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Education">Education</a>
+                    </li>
+
+                    <!-- <button type="button" data-toggle="modal" data-target="#myModal">Launch modal</button> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contact">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
         </div>
-        <ul class="links-container">
-            <li class="links-item"><a href="#" class="link active">home</a></li>
-            <li class="links-item"><a href="#project-section" class="link">project</a></li>
-            <li class="links-item"><a href="#about-section" class="link">about</a></li>
-            <li class="links-item"><a href="#contact-section" class="link">contact</a></li>
-        </ul>
     </nav>
-    <!-- New comment for test branching -->
-    <!-- home section -->
-    <!-- Create new one -->
-    <!-- Create new one -->
-    <!-- Create new one -->
-    <!-- Create new one -->
-    <!-- Create new one -->
-    <!-- Create new one -->
-    <section class="home">
-        <div class="hero-content">
-            <h1 class="hero-heading"><span class="highlight">hi, </span>i am mahros</h1>
-            <p class="profession">Front-end developer</p>
-            <p class="info">I am mahros. I am 18 years old. I am a student at Galala University in the field of Computer Science</p>
-            <a href="#contact-section" class="btn">contact</a>
-        </div>
-        <!-- <img src="src/personal-image.jpg" class="image" alt=""> -->
-    </section>
+    <!-- End Navbar -->
 
-    <!-- about section -->
-    <section class="about" id="about-section">
-        <h2 class="heading">about <span class="highlight">me</span></h2>
-        <p class="sub-heading">Lorem ipsum dolor sit amet consectetur. </p>
-        <div class="seperator"></div>
 
-        <div class="about-me-container">
-            <div class="left-col">
-                <img src="src/personal-image.jpg" class="about-image" alt="">
+    <!-- Start Header Section -->
+    <header id="Intro" class="vh-100">
+
+        <!-- Start Content -->
+        <div class="container h-100 w-100 d-flex justify-content-between align-items-center">
+            <div class="left col-5">
+                <h1 id="header-title-position" class="fw-bold" style="font-size: 3.5rem;">Front-end developer</h1>
+                <span id="header-title-idea">
+                    Engineering Solutions Shaping the future. 😍
+                </span>
+
+                <!-- <div class="bg-primary mt-3"> -->
+                <div class="d-flex pt-5 gap-0">
+                    <button id="btn-request-service" primary>Request Service</button>
+                    <button id="btn-download-cv" class="d-flex flex-row justify-content-center align-items-center"
+                        download>
+                        <div class="text col-9">Download CV</div>
+                        <div id="btn-download">
+                            <svg width="22px" height="16px" viewBox="0 0 22 16">
+                                <path
+                                    d="M2,10 L6,13 L12.8760559,4.5959317 C14.1180021,3.0779974 16.2457925,2.62289624 18,3.5 L18,3.5 C19.8385982,4.4192991 21,6.29848669 21,8.35410197 L21,10 C21,12.7614237 18.7614237,15 16,15 L1,15"
+                                    id="check"></path>
+                                <polyline points="4.5 8.5 8 11 11.5 8.5" class="svg-out"></polyline>
+                                <path d="M8,1 L8,11" class="svg-out"></path>
+                            </svg>
+                        </div>
+
+                    </button>
+
+
+                </div>
+                <!-- </div> -->
             </div>
-            <div class="right-col">
-                <p class="about-para">I am a motivated Computer Science student at Galala University. My passion lies in using technology to tackle complex problems. I have developed skills in C++, Java, and Python, and I possess a solid understanding of algorithms, data structures, and database management. I am always seeking new knowledge and keeping up with the latest industry trends. I thrive in challenging and innovative environments, enhancing my analytical and problem-solving abilities through hands-on projects and collaborative work. I strongly believe in the power of teamwork and value collective intelligence. Furthermore, I have a keen interest in AI, machine learning, and cybersecurity. I am eager to connect with like-minded professionals, mentors, and explore internship opportunities to apply my knowledge and gain practical experience. Let's join forces to foster growth, learning, and innovation within the computer science community.</p>
-                <a href="src/A4_MAHROS_ALQABASY.pdf" class="btn" download>download CV</a>
-            </div>
-        </div>
-        <h2 class="heading">languages and framework i know</h2>
-        <div class="seperator"></div>
-        <div class="skill-container">
-            <div class="skill-card" style="--bg: #f06529">
-                <p class="skill">HTML</p>
-            </div>
-            <div class="skill-card" style="--bg: #379ad6">
-                <p class="skill">CSS</p>
-            </div>
-            <div class="skill-card" style="--bg: #cc6699">
-                <p class="skill">JavaScript</p>
-            </div>
-            <div class="skill-card" style="--bg: #f7df1e">
-                <p class="skill">BootStrap</p>
-            </div>
-            <div class="skill-card large" style="--bg: #5ed9fb">
-                <p class="skill">JQuery</p>
-            </div>
-            <div class="skill-card" style="--bg: #83cd29">
-                <p class="skill">PHP</p>
-            </div>
-            <div class="skill-card" style="--bg: #326690">
-                <p class="skill">MySQL</p>
-            </div>
-            <div class="skill-card" style="--bg: #ffa000">
-                <p class="skill">Laravel</p>
-            </div>
-            <div class="skill-card" style="--bg: #5ed9fb">
-                <p class="skill">C Language</p>
-            </div>
-            <div class="skill-card" style="--bg: #5ed9fb">
-                <p class="skill">C++</p>
-            </div>
-            <div class="skill-card" style="--bg: #5ed9fb">
-                <p class="skill">Python</p>
+            <div>
+                <img id="header-img" class="w-100" src="./assets/header-section.jpg" alt="">
             </div>
         </div>
-    </section>
+        <!-- End Content -->
 
-    <!-- project section -->
-    <!-- <section class="project" id="project-section">
-        <h2 class="heading">Project<span class="highlight">s</span></h2>
-        <p class="sub-heading">Crafting user-friendly softwares, websites.</p>
-        <div class="seperator"></div>
+    </header>
+    <!-- End Header Section -->
 
-        <div class="filters">
-            <button class="filter-btn active" id="all">all</button>
-            <button class="filter-btn" id="javascript">javaScript</button>
-            <button class="filter-btn" id="ui">ui/ux</button>
-            <button class="filter-btn" id="backend">backend</button>
-            <button class="filter-btn" id="fullstack">fullStack</button>
-        </div>
-        
-            <div class="project-container">
-                <div class="project-card">
-                    <img src="src/istockphoto-1437026399-612x612.png" alt="">
-                    <div class="content">
-                        <h1 class="project-name">project one</h1>
-                        <span class="tags">#javascript</span>
-                    </div>
+
+
+    <!-- Start Experience Section -->
+    <section id="Experience" class="container mb-5">
+        <h2>Experience</h2>
+        <div class="content">
+            <div class="item">
+                <div class="d-flex flex-row justify-content-between flex-wrap">
+                    <h3>Code Alpha | Back-end developer</h3>
+                    <p>Remote | <mark>12.2024 - Present</mark></p>
                 </div>
-                <div class="project-card">
-                    <img src="src/personal-image.jpg" alt="">
-                    <div class="content">
-                        <h1 class="project-name">project one</h1>
-                        <span class="tags">#javascript</span>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="src/personal-image.jpg" alt="">
-                    <div class="content">
-                        <h1 class="project-name">project one</h1>
-                        <span class="tags">#javascript</span>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="src/personal-image.jpg" alt="">
-                    <div class="content">
-                        <h1 class="project-name">project one</h1>
-                        <span class="tags">#javascript</span>
-                    </div>
-                </div>
+                <ul>
+                    <li>Developed URL Shorten Service using Python(flask, SQLite).</li>
+                </ul>
             </div>
-    </section> -->
-
-    <!-- contact form -->
-    <section class="contact" id="contact-section">
-        <h2 class="heading">Contact<span class="highlight"> me</span></h2>
-        <p class="sub-heading"></p>
-        <div class="seperator"></div>
-
-        <div class="contact-form">
-            <div class="name">
-                <input type="text" class="first-name" required placeholder="first name">
-                <input type="text" class="last-name" required placeholder="last name">
+            <hr>
+            <div class="item">
+                <div class="d-flex flex-row justify-content-between flex-wrap">
+                    <h3>Matrix Solutions | C++ developer</h3>
+                    <p>Remote | <mark>11.2024 - 12.2024</mark></p>
+                </div>
+                <ul>
+                    <li>
+                        Designed and implemented an object-oriented interface for a fully functional ATM system and bank
+                        management system.
+                    </li>
+                    <li>
+                        Enhanced system efficiency by optimizing code and debugging critical components.
+                    </li>
+                </ul>
             </div>
-            <input type="email" required class="email" placeholder="email">
-            <textarea class="message" placeholder="message" required></textarea>
-            <button class="btn contact-btn">contact</button>
+            <hr>
+            <div class="item">
+                <div class="d-flex flex-row justify-content-between flex-wrap">
+                    <h3>Qabas Group | Front End Developer</h3>
+                    <p>Kafrelsheikh, Desouk | <mark>03.2023 - Present</mark></p>
+                </div>
+                <ul>
+                    <li>
+                        Worked with a 5-person software development team to develop Qabas Group website platforms.
+                    </li>
+                    <li>
+                        Developed a CRM desktop app with a user-friendly and responsive interface with PyQt (Python).
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
+    <!-- End Experience Section -->
 
-    <footer class="footer">All Copy Right reversed to &copy;Mahros</footer>
-    
+
+    <section id="Projects" class="container mb-5">
+        <h2>Projects</h2>
+        <div class="content">
+            <div class="item">
+                <div class="d-flex flex-row justify-content-between flex-wrap">
+                    <h3>Bank System | Matrix Solutions</h3>
+                    <p>Remote | <mark>11.2023 - 12.2024</mark></p>
+                </div>
+
+                <ul>
+                    <li>An object-oriented interface for a fully functional ATM and bank system.</li>
+                    <li>Account management, balance inquiries, fund transfers, and secure authentication.</li>
+                    <li>Provided a robust and scalable solution to simulate real-world banking operations.</li>
+                </ul>
+            </div>
+
+            <hr>
+            <div class="item">
+                <div class="d-flex flex-row justify-content-between flex-wrap">
+                    <h3>Financial App | Telecom EG</h3>
+                    <p>Cairo, Naser City | <mark>08.2024 - 09.2024</mark></p>
+                </div>
+                <ul>
+                    <li>A cross-platform mobile app for personal finance management.</li>
+                    <li>Budget tracking, real-time updates, and secure cloud integration</li>
+                    <li>Delivered as a team leader, delivering the project 1 week ahead of schedule.</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="item">
+                <div class="d-flex flex-row justify-content-between flex-wrap">
+                    <h3>Transfers Automation | Qabas Group</h3>
+                    <p>Kafrelsheikh, Desouk | <mark>06.2023 - 10.2023</mark></p>
+                </div>
+
+                <ul>
+                    <li>A Python-based system to automate bulk money transfers for Banque Misr.</li>
+                    <li>We have used Python and Qt for User interfaces.</li>
+                    <li>Batch processing, error detection, and secure data handling.</li>
+                    <li>Reduced processing time by 40% and ensured 100% compliance with bank standards.</li>
+                </ul>
+            </div>
+
+
+            <hr>
+            <div class="item">
+                <div class="d-flex flex-row justify-content-between flex-wrap">
+                    <h3>Grain Silos | Qabas Group</h3>
+                    <p>Kafrelsheikh, Desouk | <mark>03.2023 - 06.2023</mark></p>
+                </div>
+                <ul>
+                    <li>A desktop application to manage inventory for a grain trading company.Z</li>
+                    <li>We have used Python, Qt and MySQL Programming languages.</li>
+                    <li>Inventory tracking, automated reporting, and efficient stock management.</li>
+                    <li>Improved operational efficiency by automating manual processes, reducing errors by 90%.</li>
+                </ul>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <!-- Start Education Section -->
+    <section id="Education" class="container mb-5">
+        <h2>Education</h2>
+
+        <div class="item">
+            <div class="d-flex flex-row justify-content-between flex-wrap">
+                <h3>Galala University | Bachelor of Computer Science</h3>
+                <p>Suez, Ataqa | <mark>10.2023 - Present</mark></p>
+            </div>
+            <ul>
+                <li>Graduation Date: May-2026</li>
+                <li>Top-ranked student in local problem-solving contest competition.</li>
+            </ul>
+        </div>
+        <hr>
+        <div class="item">
+            <div class="d-flex flex-row justify-content-between flex-wrap">
+                <h3>Telecom Egypt | Flutter Mobile App Diploma</h3>
+                <p>Cairo, Nasr City | <mark>07.2024 - 09.2024</mark></p>
+            </div>
+            <ul>
+                <li>Key Skills: Dart, Flutter, Firebase, and Cloud Store.</li>
+                <li>Project: Developed Finance Mobile App for Trading Company</li>
+                <li>Achievements:
+                    <ul>
+                        <li>Successfully developed a cross-platform mobile app for a trading company using
+                            Flutter, enabling users to trade stocks, track portfolios, and receive real-time
+                            market updates.</li>
+                        <li>Implemented real-time data synchronization using Firebase and the Cloud Store,
+                            ensuring seamless data updates across multiple devices and enabling
+                            collaborative
+                            trading features.</li>
+                        <li>Collaborated effectively with a team of developers to deliver the project on
+                            time
+                            and within budget, exceeding client expectations.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <div class="item">
+            <div class="d-flex flex-row justify-content-between flex-wrap">
+                <h3>AMIT Learning | Full Stack Diploma</h3>
+                <p>Remote | <mark>05.2021 - 12.2022</mark></p>
+            </div>
+            <ul>
+                <li>Key Skills: HTML, CSS, JavaScript, Git, and GitHub</li>
+                <li>Project: Developed COVID-19 Informative Platform</li>
+                <li>Achievements:
+                    <ul>
+                        <li>Upgraded the functionality of a comprehensive COVID-19 Informative Platform
+                            through
+                            innovative UI/UX design strategies, leading to significant improvements in
+                            navigation efficiency as evidenced by user feedback scores exceeding 90%.</li>
+                        <li>Successfully completed the project within 1 week.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </section>
+    <!-- End Education Section -->
+
+
+    <!-- Start skills section -->
+    <section id="Skills" class="container mb-5">
+        <h2>Skills</h2>
+        <div class="skills">
+            <span>C++</span>
+            <span>Python</span>
+            <span>Dart</span>
+            <span>SQL</span>
+            <span>JavaScript</span>
+            <span>PHP</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Git</span>
+            <span>Firebase</span>
+            <span>Bootstrap</span>
+            <span>jQuery</span>
+        </div>
+    </section>
+    <!-- Start skills section -->
+
+
+    <!-- Start Section Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="mailto:mahros.work@hotmail.com">Mail</a></li>
+                        <li><a href="tel:+201015888272">Phone</a></li>
+                        <li><a href="https://wa.me/+201015888272">WhatsApp</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#web-development">Web Development</a></li>
+                        <li><a href="#software-solutions">Software Solutions</a></li>
+                        <li><a href="#mobile-app-development">Mobile App Development</a></li>
+                        <li><a href="#desktop-app-development">Desktop App Development</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Site Map</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">Experience</a></li>
+                        <li><a href="#services">Projects</a></li>
+                        <li><a href="#portfolio">Education</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Follow Me</h5>
+                    <a href="https://www.linkedin.com/in/ma7ros" target="_blank">
+                        <i class="fab fa-linkedin social-icon" style="color: #0A66C2;"></i>
+                    </a>
+                    <a href="https://www.github.com/elqabasy" target="_blank">
+                        <i class="fab fa-github social-icon" style="color: #333;">
+                        </i>
+                    </a>
+                    <a href="https://codeforces.com/mahros" target="_blank">
+                        <i class="fas fa-code social-icon" style="color: #FF5722;"></i>
+                    </a>
+                    <a href="https://vjudge.net/mahros" target="_blank">
+                        <i class="fas fa-balance-scale social-icon" style="color: #28a745;"></i>
+                    </a>
+                    <!-- <a href="https://www.youtube.com" target="_blank">
+                        <i class="fab fa-youtube social-icon" style="color: #FF0000;"></i>
+                    </a> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Section Footer -->
+
+    <!-- Start top div -->
+    <button onclick="goTop()" id="goTopBtn" title="Go to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    <!-- End top div -->
+
+
+    <!-- Start Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- End Scripts -->
 </body>
+
 </html>

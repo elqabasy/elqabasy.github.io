@@ -1,0 +1,18 @@
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (min-width: 992) {}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 1024px) {
+    header#Intro>.container>.left {
+        width: 100vw;
+    }
+
+
+    #header-img {
+        display: none;
+    }
+
+    body {
+        /* background-color: olive; */
+    }
+}
