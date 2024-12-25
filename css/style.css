@@ -218,7 +218,7 @@ section>h2::before {
 
 /* Start go-to-top */
 #goTopBtn {
-
+    display: none;
     width: 2px;
     height: 2px;
     position: fixed;
