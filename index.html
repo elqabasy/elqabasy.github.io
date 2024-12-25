@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
 
     <!-- Start favicon -->
+    <link rel="manifest" href="./manifest.json">
+
     <link rel="apple-touch-icon" sizes="180x180" href="./assests/icon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assests/icon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assests/icon/favicon-16x16.png">
@@ -375,6 +378,37 @@
     </section>
     <!-- Start skills section -->
 
+    <!-- Start Contact Section -->
+
+    <section id="Contact" class="container mb-5">
+        <h2>Contact</h2>
+        <div class="content">
+            <form id="contact-form" action="mailto:mahros.work@hotmail.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input placeholder="ex: Mahros Mohamed" type="text" id="name" name="name" class="form-control"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input placeholder="ex: mahros.work@hotmail.com" type="email" id="email" name="email"
+                        class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input placeholder="ex: Modern Responsive Mobile App" type="text" id="subject" name="subject"
+                        class="form-control" value="Requesting a Service" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                </div> <button type="submit" class="btn btn-primary mt-3">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- End Contact Section -->
+
     <hr>
     <!-- Start Section Footer -->
     <footer class="footer">
@@ -384,10 +418,6 @@
                     <h5>Quick Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="mailto:mahros.work@hotmail.com">Mail</a></li>
-                        <a
-                            href="mailto:mahros.work@hotmail.com?subject=Requesting%20a%20Service&body=Dear%20[Recipient],%0D%0A%0D%0AI%20am%20writing%20to%20request%20a%20service%20regarding%20[Your%20Service%20Details].%0D%0A%0D%0AKind%20regards,%0D%0A[Your%20Name]">
-                            Mail
-                        </a>
                         <li><a href="tel:+201015888272">Phone</a></li>
                         <li><a href="https://wa.me/+201015888272">WhatsApp</a></li>
 

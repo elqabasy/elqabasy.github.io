@@ -163,8 +163,8 @@ hr {
     background-color: var(--background);
 }
 
-section>.content:hover {
-    background-color: var(--secondary);
+textarea {
+    resize: none;
 }
 
 section>.content {
@@ -422,3 +422,62 @@ section a:hover::before {
         opacity: 1;
     }
 }
+
+
+
+
+
+/* Start Contact Section */
+
+
+#Contact .content {
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contact-form {
+    background-color: var(--background);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--secondary);
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    /* Adjust to match your site's color scheme */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #433bff;
+    /* Adjust hover color */
+}
+
+/* End Contact Section */
