@@ -9,4 +9,9 @@
     section>.content>div.item>div {
         flex-direction: column;
     }
+
+    header#Intro>.container .header-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
 }
