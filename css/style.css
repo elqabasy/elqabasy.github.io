@@ -1,5 +1,5 @@
 /* Start header section */
-
+/* @import url("./"); */
 
 
 
@@ -8,14 +8,10 @@ header {
     height: 50vh;
 }
 
-
-nav>div>a {
-    /* background: linear-gradient(#121213, #121213), linear-gradient(#121213 50%, rgba(18, 18, 19, 0.6) 80%, rgba(18, 18, 19, 0)), linear-gradient(90deg, var(--orange), var(--yellow), var(--green), var(--blue), var(--purple), var(--pink), var(--red)); */
-    background-origin: border-box;
-    background-clip: padding-box, border-box, border-box;
-    background-size: 200%;
-    animation: animate 2s infinite linear;
+* {
+    min-width: min-content;
 }
+
 
 
 #btn-request-service,
@@ -40,6 +36,7 @@ section a {
     color: var(--accent);
     text-decoration: none;
     font-size: larger;
+
 }
 
 /* btn download */
@@ -217,36 +214,47 @@ section>h2::before {
 
 
 /* Start go-to-top */
-#goTopBtn {
-    display: none;
-    width: 2px;
-    height: 2px;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
 
-    text-align: center;
-    border: none;
-    outline: none;
-    /* background-color: var(--accent); */
-    color: var(--accent);
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 50%;
+#toggleTheme,
+#goTopBtn {
+    color: var(--primary);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s;
+    position: fixed;
+    display: block;
+    /*background-color: wheat;
+    */
+    width: 28px;
+    height: 28px;
+    bottom: 15px;
+    right: 30px;
+
+    border: 0.5px solid white;
+    background-color: white;
+
+
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+
+#goTopBtn {
+    display: none;
+    bottom: 50px;
 
 }
 
 #goTopBtn>i {
-    position: relative;
+    /* position: relative;
     top: -10px;
-    left: -13px;
-    width: 25px;
-    height: 25px;
-    border-radius: 15px;
-    background-color: var(--secondary-100);
+    left: -13px; */
+    /* width: 25px;
+    height: 25px; */
+    /* border-radius: 15px;
+    background-color: var(--secondary-100); */
 }
 
 #goTopBtn:hover {
@@ -538,6 +546,7 @@ section a:hover::before {
 
 .btn-primary:hover {
     background-color: #433bff;
+
     /* Adjust hover color */
 }
 

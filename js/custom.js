@@ -9,7 +9,7 @@ function scroll() {
 	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
 		goTopBtn.style.display = "block";
 
-		var navbar = document.getElementById("")
+		var navbar = document.getElementById("");
 	} else {
 		goTopBtn.style.display = "none";
 	}
@@ -35,4 +35,13 @@ function downloadCV() {
 	document.body.appendChild(link);
 	link.click();
 	document.body.removeChild(link);
+}
+
+function toggleTheme() {
+	const body = document.body;
+
+	body.setAttribute(
+		"data-theme",
+		body.getAttribute("data-theme") == "light" ? "dark" : "light",
+	);
 }
