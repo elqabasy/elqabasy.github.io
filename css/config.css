@@ -18,7 +18,7 @@ body[data-theme="light"] {
 
 body[data-theme="dark"] {
     --text: #ebe9fc;
-    --background: #010104aa;
+    --background: rgb(158, 154, 196);
     --primary: #3a31d8;
     --secondary: #020024;
     --accent: #0600c2;
@@ -38,15 +38,9 @@ body[data-theme="dark"] {
 
 }
 
-button {
-    border: red !important;
-}
-
 
 body {
     overflow: scroll;
-    color: var(--text);
-    background-color: var(--background);
 }
 
 
@@ -65,9 +59,9 @@ button:hover {
 
 body {
     font-weight: 300;
-    color: var(--text);
+    color: var(--text) !important;
     font-family: 'Offside';
-    background-color: var(--background);
+    background-color: var(--background) !important;
 }
 
 

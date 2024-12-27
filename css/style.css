@@ -1,5 +1,4 @@
 /* Start header section */
-/* @import url("./"); */
 
 
 
@@ -232,16 +231,12 @@ section>h2::before {
     background-color: white;
 
     border-radius: 15px;
-    /* -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px; */
 }
 
 
 #goTopBtn {
     display: none;
-    bottom: 150px;
+    bottom: 50px;
     right: 30px;
 
 }
@@ -308,8 +303,8 @@ section a:hover::before {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     transform: rotate(45deg);
-    border-right: 2px solid var(--accent);
-    border-bottom: 2px solid var(--accent);
+    border-right: 2px solid var(--primary);
+    border-bottom: 2px solid var(--primary);
     margin: 0 0 3px 5px;
 }
 
