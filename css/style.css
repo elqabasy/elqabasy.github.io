@@ -221,7 +221,7 @@ section>h2::before {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s;
     position: fixed;
-    display: block;
+    /* display: block; */
     /*background-color: wheat;
     */
     width: 28px;
