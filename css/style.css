@@ -25,10 +25,14 @@ header {
 
 #btn-request-service {
     font-weight: bold;
-    color: var(--background);
+    color: var(--background) !important;
     background-color: var(--primary);
+}
 
 
+#btn-request-service>a {
+    text-decoration: none;
+    color: white;
 }
 
 section a {
@@ -177,9 +181,10 @@ section {
 section>h2 {
     position: relative;
     padding-left: 15px;
+    width: min-content;
 }
 
-section>h2::before {
+section>h2::after {
     content: '';
     position: absolute;
     left: 0;
@@ -189,6 +194,13 @@ section>h2::before {
     height: 25px;
     border-radius: 5px;
     background-color: var(--secondary);
+    /* color: red; */
+    /* background-color: red; */
+}
+
+section>h2:hover+ ::before {
+    /* color: red; */
+    background-color: red;
 }
 
 /* End Section Title */
