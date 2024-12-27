@@ -247,16 +247,6 @@ section>h2::before {
 
 }
 
-#goTopBtn>i {
-    /* position: relative;
-    top: -10px;
-    left: -13px; */
-    /* width: 25px;
-    height: 25px; */
-    /* border-radius: 15px;
-    background-color: var(--secondary-100); */
-}
-
 #goTopBtn:hover {
     background-color: var(--secondary);
     color: var(--primary);
