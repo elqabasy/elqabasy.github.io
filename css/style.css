@@ -221,29 +221,28 @@ section>h2::before {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s;
     position: fixed;
-    /* display: block; */
-    /*background-color: wheat;
-    */
+
     width: 28px;
     height: 28px;
+
     bottom: 15px;
     right: 30px;
 
     border: 0.5px solid white;
     background-color: white;
 
-
     border-radius: 15px;
-    -webkit-border-radius: 15px;
+    /* -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
-    -o-border-radius: 15px;
+    -o-border-radius: 15px; */
 }
 
 
 #goTopBtn {
     display: none;
-    bottom: 50px;
+    bottom: 150px;
+    right: 30px;
 
 }
 
@@ -258,9 +257,8 @@ section>h2::before {
 /* Start Contact Section */
 footer .follow-links>a>i>i {
     width: 40px;
-    text-align: center;
-    /* background-color: red; */
     font-size: 32px;
+    text-align: center;
 }
 
 footer a::before,
