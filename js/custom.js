@@ -1,3 +1,7 @@
+window.onload = function () {
+	document.getElementById("loader-wrapper").style = "display:none;";
+};
+
 // Handle Go top btn action
 // Get the button
 var goTopBtn = document.getElementById("goTopBtn");
