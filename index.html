@@ -1,545 +1,68 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Developer, Mahros, ALQabasy, Qabasy, Qabas, Front-end, HTML, CSS, JavaScript">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahros AL-Qabasy | Frontend Developer & Cybersecurity Enthusiast</title>
+  <meta name="description"
+    content="Portfolio of Mahros AL-Qabasy, a frontend developer, blue team cybersecurity learner, and competitive programmer." />
+  <meta name="author" content="Mahros AL-Qabasy" />
+
+  <meta property="og:title" content="Mahros AL-Qabasy | Frontend Developer & Cybersecurity Enthusiast" />
+  <meta property="og:description"
+    content="Portfolio of Mahros AL-Qabasy, a frontend developer, blue team cybersecurity learner, and competitive programmer." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/app-icon-64.png" />
+
+  <!-- new meta here, i will test them -->
+  <meta property="og:url" content="https://mahros-alqabasy.github.io/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mahros AL-Qabasy | Frontend Developer & Cybersecurity Enthusiast" />
+  <meta name="twitter:description"
+    content="Portfolio of Mahros AL-Qabasy, a frontend developer, blue team cybersecurity learner, and competitive programmer." />
+  <meta name="twitter:image" content="https://mahros-alqabasy.github.io/app-icon-large.png" />
+
+  <!-- new meta here, i will test them -->
 
 
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
 
-    <!-- Start favicon -->
-    <link rel="manifest" href="./manifest.json">
+  <!-- preload the critical assets - image not main.tsx-->
+  <link rel="preload" href="/app-icon-large.png" as="image" type="image/png" />
+  <!-- preload the critical assets -->
 
-    <link rel="apple-touch-icon" sizes="180x180" href="./assests/icon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assests/icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assests/icon/favicon-16x16.png">
-    <link rel="manifest" href="./assets/icons/site.webmanifest">
-    <!-- End favicon -->
+  <!-- google person schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mahros AL-Qabasy",
+    "url": "https://mahros-alqabasy.github.io/",
+    "sameAs": [
+      "https://github.com/mahros-alqabasy",
+      "https://linkedin.com/in/elqabasy"
+    ],
+    "jobTitle": "Frontend Developer",
+    "description": "Frontend developer, cybersecurity enthusiast, and competitive programmer."
+  }
+  </script>
 
-    <title>Mahros Mohamed - Front-End Developer</title>
-    <meta name="description"
-        content="Request services and view the portfolio of Mahros Mohamed, a skilled Front-End Developer.">
-    <link rel="canonical" href="https://elqabasy.github.io/">
-    <meta name="keywords" content="Front-End Developer, Mahros Mohamed, Web Development, Portfolio, Request Service">
+  <!-- google person schema -->
 
-    <!-- Start CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/config.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media-query.css">
-    <!-- End CSS -->
+  <link rel="icon" type="image/png" href="/icon.svg" sizes="64x64" />
 
 
-    <!-- Start Appear on social media -->
-    <meta property="og:title" content="Mahros Mohamed - Front-End Developer">
-    <meta property="og:description"
-        content="Request services and view the portfolio of Mahros Mohamed, a skilled Front-End Developer.">
-    <meta property="og:image" content="https://www.yoursite.com/favicon.ico">
-    <meta property="og:url" content="https://elqabasy.github.io">
 
-    <!-- End Appear on social media -->
-    <!-- Start custom seo scripts -->
-    <script type="application/ld+json">
-        {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Mahros Mohamed",
-        "jobTitle": "Front-End Developer",
-        "url": "https://elqabasy.github.io",
-        "sameAs": [
-            "https://www.linkedin.com/in/ma7ros",
-            "https://vjudge.net/user/mahros",
-            "https://www.github.com/elqabasy",
-        ]
-        }
-    </script>
-    <!-- End custom seo scripts -->
+  <!-- google ver. method -->
+  <meta name="google-site-verification" content="nOob4z0wPI3qAkSJPvLmO_CR_h_Qm7CrB_j2SE1M4fY" />
+  <!-- google ver. method -->
 </head>
 
-<body data-theme="light">
-
-    <div id="loader-wrapper">
-        <div class="loader"></div>
-        Loading...
-    </div>
-    <!-- Start Navbar -->
-    <nav id="nav-bar-top-1" class="navbar navbar-expand-lg ">
-        <div class="container rounded border mt-1">
-            <a class="navbar-brand fw-bold" href="#">Mahros AL-Qabasy</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#Intro" selected>Intro</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Experience" selected>Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Projects">Projects</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Education">Education</a>
-                    </li>
-
-                    <!-- <button type="button" data-toggle="modal" data-target="#myModal">Launch modal</button> -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Contact">Contact</a>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- End Navbar -->
-
-
-    <!-- Start Header Section -->
-    <header id="Intro" class="vh-100">
-        <!-- <div id="overall-keywords" class="h-75">
-            <div class="container">
-                <div class="item">HTML</div>
-                <div class="item">CSS</div>
-                <div class="item">JavaScript</div>
-                <div class="item">Python</div>
-                <div class="item">C++</div>
-                <div class="item">Dart</div>
-                <div class="item">Flutter</div>
-            </div>
-        </div> -->
-
-        <!-- Start Content -->
-        <div class="container h-100 m-auto">
-            <div class="h-75 d-flex flex-column justify-content-center">
-                <div class="text-center">
-                    <h1 class="fw-bold display-1">
-                        <span>CS</span>
-                        <span> Student</span>
-                    </h1>
-                    <span class="fw-bold">Your Vision, Our Code. 😍</span>
-
-                </div>
-
-                <div class="pt-5 gap-3 justify-content-center">
-                    <div class="header-buttons d-flex gap-3 flex-wrap justify-content-center">
-                        <button id="btn-request-service" data-toggle="modal" data-target="#exampleModalLong" primary>
-                            <a href="#Contact">Request Service</a>
-                        </button>
-                        <button id="btn-download-cv" class="d-flex flex-row justify-content-center align-items-center">
-
-                            <div class="text col-9">Download CV</div>
-                            <div id="btn-download">
-                                <svg width="22px" height="16px" viewBox="0 0 22 16">
-                                    <path
-                                        d="M2,10 L6,13 L12.8760559,4.5959317 C14.1180021,3.0779974 16.2457925,2.62289624 18,3.5 L18,3.5 C19.8385982,4.4192991 21,6.29848669 21,8.35410197 L21,10 C21,12.7614237 18.7614237,15 16,15 L1,15"
-                                        id="check">
-                                    </path>
-                                    <polyline points="4.5 8.5 8 11 11.5 8.5" class="svg-out"></polyline>
-                                    <path d="M8,1 L8,11" class="svg-out"></path>
-                                </svg>
-                            </div>
-
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <a href="#Experience">
-                <div id="mouse-scroll" class="d-flex flex-column m-auto">
-                    <div class="mouse">
-                        <div class="mouse-in"></div>
-                    </div>
-                    <div>
-                        <span class="down-arrow-1"></span>
-                        <span class="down-arrow-2"></span>
-                        <span class="down-arrow-3"></span>
-                    </div>
-                </div>
-            </a>
-
-
-
-
-
-        </div>
-        <!-- End Content -->
-
-    </header>
-    <!-- End Header Section -->
-
-
-
-    <!-- Start Experience Section -->
-    <section id="Experience" class="container mb-5">
-        <h2>Experience</h2>
-
-
-        <div class="content">
-            <div class="item">
-                <div class="d-flex flex-row justify-content-between flex-wrap">
-                    <a href="https://www.linkedin.com/in/ma7ros#experience" target="_blank">Code Alpha | Back-end
-                        developer
-                    </a>
-                    <p>Remote | <mark>12.2024 - Present</mark></p>
-                </div>
-                <ul>
-                    <li>Developed URL Shorten Service using Python(flask, SQLite).</li>
-                </ul>
-            </div>
-            <hr>
-            <div class="item">
-                <div class="d-flex flex-row justify-content-between flex-wrap">
-                    <a href="https://www.linkedin.com/in/ma7ros#experience" target="_blank">Matrix Solutions | C++
-                        developer
-                    </a>
-                    <p>Remote | <mark>11.2024 - 12.2024</mark></p>
-                </div>
-                <ul>
-                    <li>
-                        Designed and implemented an object-oriented interface for a fully functional ATM system and bank
-                        management system.
-                    </li>
-                    <li>
-                        Enhanced system efficiency by optimizing code and debugging critical components.
-                    </li>
-                </ul>
-            </div>
-            <hr>
-            <div class="item">
-                <div class="d-flex flex-row justify-content-between flex-wrap">
-                    <a href="https://www.linkedin.com/in/ma7ros#experience" target="_blank">Qabas Group | Front End
-                        Developer
-                    </a>
-                    <p>Egypt, Desouk | <mark>03.2023 - Present</mark></p>
-                </div>
-                <ul>
-                    <li>
-                        Worked with a 5-person software development team to develop Qabas Group website platforms.
-                    </li>
-                    <li>
-                        Developed a CRM desktop app with a user-friendly and responsive interface with PyQt (Python).
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <!-- End Experience Section -->
-
-
-    <section id="Projects" class="container mb-5">
-        <h2>Projects</h2>
-
-        <div class="content">
-            <div class="item">
-                <div class="d-flex flex-row justify-content-between flex-wrap">
-                    <a href="https://github.com/elqabasy/BankSystem" target="_blank">
-                        Bank System | BWMS
-                    </a>
-                    <p>Remote | <mark>11.2023 - 12.2024</mark></p>
-                </div>
-
-                <ul>
-                    <li>An object-oriented interface for a fully functional ATM and bank system.</li>
-                    <li>Account management, balance inquiries, fund transfers, and secure authentication.</li>
-                    <li>Provided a robust and scalable solution to simulate real-world banking operations.</li>
-                </ul>
-            </div>
-
-            <hr>
-            <div class="item">
-                <div class="d-flex flex-row justify-content-between flex-wrap">
-                    <a href="https://www.linkedin.com/in/ma7ros#experience" target="_blank">
-                        Financial App | Telecom EG
-                    </a>
-                    <p>Cairo, Naser City | <mark>08.2024 - 09.2024</mark></p>
-                </div>
-                <ul>
-                    <li>A cross-platform mobile app for personal finance management.</li>
-                    <li>Budget tracking, real-time updates, and secure cloud integration</li>
-                    <li>Delivered as a team leader, delivering the project 1 week ahead of schedule.</li>
-                </ul>
-            </div>
-            <hr>
-            <div class="item">
-                <div class="d-flex flex-row justify-content-between flex-wrap">
-                    <a href="https://github.com/elqabasy/Auto-Bank/tree/main/Auto-Bank" target="_blank">
-                        Auto Bank | Qabas Group
-                    </a>
-                    <p>Kafrelsheikh, Desouk | <mark>06.2023 - 10.2023</mark></p>
-                </div>
-
-                <ul>
-                    <li>A Python-based system to automate bulk money transfers for Banque Misr.</li>
-                    <li>We have used Python and Qt for User interfaces.</li>
-                    <li>Batch processing, error detection, and secure data handling.</li>
-                    <li>Reduced processing time by 40% and ensured 100% compliance with bank standards.</li>
-                </ul>
-            </div>
-
-
-            <hr>
-            <div class="item">
-                <div class="d-flex flex-row justify-content-between flex-wrap">
-                    <a href="https://github.com/elqabasy/SAWMAA-PROJECT" target="_blank">
-                        Grain Silos | Qabas Group
-                    </a>
-                    <p>Kafrelsheikh, Desouk | <mark>03.2023 - 06.2023</mark></p>
-                </div>
-                <ul>
-                    <li>A desktop application to manage inventory for a grain trading company.Z</li>
-                    <li>We have used Python, Qt and MySQL Programming languages.</li>
-                    <li>Inventory tracking, automated reporting, and efficient stock management.</li>
-                    <li>Improved operational efficiency by automating manual processes, reducing errors by 90%.</li>
-                </ul>
-            </div>
-
-
-        </div>
-    </section>
-
-
-    <!-- Start Education Section -->
-    <section id="Education" class="container mb-5">
-        <h2>Education</h2>
-
-        <div class="content">
-            <div class="item">
-                <div class="d-flex flex-row justify-content-between flex-wrap">
-                    <a href="https://www.linkedin.com/in/ma7ros#experience" target="_blank">
-                        Galala University | Computer Science
-                    </a>
-                    <p>Suez, Ataqa | <mark>10.2023 - Present</mark></p>
-                </div>
-                <ul>
-                    <li>Graduation Date: May-2026</li>
-                    <li>Top-ranked student in local problem-solving contest competition.</li>
-                </ul>
-            </div>
-            <hr>
-            <div class="item">
-                <div class="d-flex flex-row justify-content-between flex-wrap">
-                    <a href="https://github.com/elqabasy/Licenses-Certifications/blob/main/Flutter%20Mobile%20App%20Diploma.jpg"
-                        target="_blank">
-                        Telecom Egypt | Flutter Diploma
-                    </a>
-                    <p>Cairo, Nasr City | <mark>07.2024 - 09.2024</mark></p>
-                </div>
-                <ul>
-                    <li>Key Skills: Dart, Flutter, Firebase, and Cloud Store.</li>
-                    <li>Project: Developed Finance Mobile App for Trading Company</li>
-                    <li>Achievements:
-                        <ul>
-                            <li>Successfully developed a cross-platform mobile app for a trading company using
-                                Flutter, enabling users to trade stocks, track portfolios, and receive real-time
-                                market updates.</li>
-                            <li>Implemented real-time data synchronization using Firebase and the Cloud Store,
-                                ensuring seamless data updates across multiple devices and enabling
-                                collaborative
-                                trading features.</li>
-                            <li>Collaborated effectively with a team of developers to deliver the project on
-                                time
-                                and within budget, exceeding client expectations.</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <hr>
-            <div class="item">
-                <div class="d-flex flex-row justify-content-between flex-wrap">
-                    <a href="" target="_blank">
-                        AMIT Learning | Full Stack Diploma
-                    </a>
-                    <p>Remote | <mark>05.2021 - 12.2022</mark></p>
-                </div>
-                <ul>
-                    <li>Key Skills: HTML, CSS, JavaScript, Git, and GitHub</li>
-                    <li>Project: Developed COVID-19 Informative Platform</li>
-                    <li>Achievements:
-                        <ul>
-                            <li>Upgraded the functionality of a comprehensive COVID-19 Informative Platform
-                                through
-                                innovative UI/UX design strategies, leading to significant improvements in
-                                navigation efficiency as evidenced by user feedback scores exceeding 90%.</li>
-                            <li>Successfully completed the project within 1 week.</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <!-- End Education Section -->
-
-
-    <!-- Start skills section -->
-    <section id="Skills" class="container mb-5">
-        <h2>Skills</h2>
-
-        <div class="content skills">
-            <span>C++</span>
-            <span>Python</span>
-            <span>Dart</span>
-            <span>SQL</span>
-            <span>JavaScript</span>
-            <span>PHP</span>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>Git</span>
-            <span>Firebase</span>
-            <span>Bootstrap</span>
-            <span>jQuery</span>
-        </div>
-    </section>
-    <!-- Start skills section -->
-
-    <!-- Start Services Section -->
-
-    <!-- End Services Section -->
-
-
-    <!-- Start Contact Section -->
-
-    <section id="Contact" class="container mb-5">
-        <h2>Contact</h2>
-        <div class="content">
-            <!-- No action/method since we won't do a normal form submission -->
-            <form id="contact-form" enctype="text/plain">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" class="form-control" placeholder="ex: Mahros Mohamed"
-                        required />
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" class="form-control"
-                        placeholder="ex: mahros.work@hotmail.com" required />
-                </div>
-
-                <div class="form-group">
-                    <label for="subject">Subject:</label>
-                    <input type="text" id="subject" name="subject" class="form-control" value="Requesting a Service"
-                        placeholder="ex: Modern Responsive Mobile App" readonly />
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" class="form-control" rows="5"
-                        placeholder="ex: Write what you want: Mobile App, Website, Desktop App, etc."
-                        required></textarea>
-                </div>
-
-                <!-- Use a button type="button" so it won’t do a normal form submission -->
-                <button type="button" class="btn btn-primary mt-3" onclick="sendWhatsAppMessage()">
-                    Send
-                </button>
-            </form>
-        </div>
-    </section>
-
-    <script>
-        function sendWhatsAppMessage() {
-            // 1. Gather input values
-            const nameVal = document.getElementById("name").value.trim();
-            const emailVal = document.getElementById("email").value.trim();
-            const subjectVal = document.getElementById("subject").value.trim();
-            const messageVal = document.getElementById("message").value.trim();
-
-            // 2. Construct the text you want to send
-            //    (Your WhatsApp bot can look for these lines)
-            const finalText = `[elqabasy.github.io]\nName: ${nameVal}\nEmail: ${emailVal}\nSubject: ${subjectVal}\nMessage: ${messageVal}\n[END]`;
-
-            // 3. URL-encode the text
-            const encodedText = encodeURIComponent(finalText);
-
-            // 4. Build the WhatsApp URL
-            //    Replace this phone number with your actual one in full int'l format, no plus sign
-            const phoneNumber = "201015888272";
-            const whatsAppURL = `https://wa.me/${phoneNumber}?text=${encodedText}`;
-
-            // 5. Open the link in a new tab (or same tab if you prefer)
-            window.open(whatsAppURL, "_blank");
-        }
-    </script>
-
-
-    <!-- End Contact Section -->
-
-    <hr>
-    <!-- Start Section Footer -->
-    <footer class="footer">
-        <div class="container-sm">
-            <div class="row">
-                <div class="col-md-3">
-                    <h5>Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="mailto:mahros.work@hotmail.com">Mail</a></li>
-                        <li><a href="tel:+201015888272">Phone</a></li>
-                        <li><a href="https://wa.me/+201015888272">WhatsApp</a></li>
-
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h5>Services</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#web-development">Web Apps</a></li>
-                        <li><a href="#mobile-app-development">Mobile App</a></li>
-                        <li><a href="#desktop-app-development">Desktop App</a></li>
-                        <li><a href="#software-solutions">Software Dev.</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h5>Site Map</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#Intro">Home</a></li>
-                        <li><a href="#Experience">Experience</a></li>
-                        <li><a href="#Projects">Projects</a></li>
-                        <li><a href="#Education">Education</a></li>
-                        <li><a href="#Contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 follow-links d-flex flex-column align-items-left gap-2">
-                    <h5>Follow Me</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="https://www.github.com/elqabasy" target="_blank">GitHub</a></li>
-                        <li><a href="https://vjudge.net/user/mahros" target="_blank">VJudge</a></li>
-                        <li><a href="https://www.linkedin.com/in/ma7ros" target="_blank">LinkedIn</a></li>
-                        <li><a href="https://codeforces.com/profile/mahros" target="_blank">Codeforces</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- End Section Footer -->
-
-
-    <!-- Start top div -->
-    <button onclick="goTop()" id="goTopBtn">
-        <i class="fas fa-chevron-up"></i>
-    </button>
-    <button onclick="toggleTheme()" id="toggleTheme">
-        <i class="fa-regular fa-moon"></i>
-    </button>
-    <!-- End top div -->
-
-    <div class="text-center p-3 ">Created with <span class="text-primary h4">&hearts;</span> by Mahros.</div>
-
-    <!-- Start Scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/bootstrap.esm.min.js"></script>
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="js/custom.js"></script>
-
-    <!-- End Scripts -->
+<body lang="en">
+  <div id="root"></div>
+  <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+  <!-- <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script> -->
+  <script type="module" src="/src/main.tsx"></script>
 </body>
 
 </html>

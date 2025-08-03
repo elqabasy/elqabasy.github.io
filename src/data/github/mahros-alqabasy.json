@@ -1,0 +1,23 @@
+
+{
+  "login": "mahros-alqabasy",
+  "id": 149203320,
+  "avatar_url": "https://avatars.githubusercontent.com/u/149203320?v=4",
+  "gravatar_id": "",
+  "url": "https://api.github.com/users/mahros-alqabasy",
+  "html_url": "https://github.com/mahros-alqabasy",
+  "followers_url": "https://api.github.com/users/mahros-alqabasy/followers",
+  "following_url": "https://api.github.com/users/mahros-alqabasy/following{/other_user}",
+  "type": "User",
+  "name": "Mahros Al-Qabasy",
+  "company": "Galala University",
+  "blog": "",
+  "location": "Egypt",
+  "bio": "Computer Science student at Galala University",
+  "public_repos": 15,
+  "public_gists": 0,
+  "followers": 5,
+  "following": 10,
+  "created_at": "2023-10-27T20:10:36Z",
+  "updated_at": "2025-05-11T14:23:18Z"
+}
